@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
+	CFLAGS="" \
+	CPPFLAGS="" \
+	CXXFLAGS="" \
+	dh_auto_configure --parallel -- \
+	    -DPORT=WPE \
+	    -DCMAKE_C_FLAGS_RELEASE="-O2 -DNDEBUG" \
+	    -DCMAKE_CXX_FLAGS_RELEASE="-O2 -DNDEBUG" \
+	    -DCMAKE_BUILD_TYPE=Release
+
+override_dh_clean:
+	dh_clean
+	rm -f Source/JavaScriptCore/disassembler/udis86/*.pyc
+	rm -f Source/JavaScriptCore/inspector/scripts/codegen/*.pyc
+	rm -f Source/JavaScriptCore/inspector/scripts/*.pyc
+	rm -f Source/WebKit2/Scripts/webkit/*.pyc
+
+override_dh_auto_test:
