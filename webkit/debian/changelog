@@ -1,5 +1,5 @@
-wpe (20150928-1) UNRELEASED; urgency=medium
+wpe-webkit (20151008-1) UNRELEASED; urgency=medium
 
-  * Initial release. (Closes: #XXXXXX)
+  * Bump to wpe-20151008.
 
- -- Zan Dobersek <zan@falconsigh.net>  Tue, 29 Sep 2015 07:43:09 -0700
+ -- Zan Dobersek <zan@falconsigh.net>  Mon, 12 Oct 2015 04:58:26 -0700
