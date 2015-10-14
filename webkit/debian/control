@@ -31,7 +31,8 @@ Build-Depends: debhelper (>= 9),
                libgles2-mesa-dev,
                libdrm-dev,
                libgbm-dev,
-               libwayland-dev
+               libwayland-dev,
+               libxkbcommon-dev
 
 Package: libwpe-webkit
 Section: libs
