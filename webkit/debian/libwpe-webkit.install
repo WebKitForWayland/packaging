@@ -1,0 +1,4 @@
+usr/bin/WPENetworkProcess
+usr/bin/WPEWebProcess
+usr/lib/libWPE.so
+usr/lib/libWPEWebKit.so.*
